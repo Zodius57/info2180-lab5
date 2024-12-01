@@ -8,6 +8,23 @@ header{
     color: #FFFFFF;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+}
+
+#logo{
+    height: 10%;
+    width: 10%;
+}
+
 table{
-    
+    border-collapse: separate;
+}
+
+th,
+td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
 }
