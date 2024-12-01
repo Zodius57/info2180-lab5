@@ -12,11 +12,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
   $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
-  echo "<ul>";
+  echo "<table>";
+  echo "<thead>";
+  echo "<tr>";
+  echo "<th>Name</th>";
+  echo "<th>Continent</th>";
+  echo "<th>Independence</th>";
+  echo "<th>Head of State</th>";
+  echo "</tr>";
+  echo "</thead>";
+  echo "<tbody>";
   foreach ($results as $row){
-    echo "<li>" . htmlentities($row['name']) . ' is ruled by ' . htmlentities($row['head_of_state']) . "</li>";
+    echo "<tr>";
+    echo "<td>" . htmlentities($row['name']) . "</td>";
+    echo "<td>" . htmlentities($row['continent']) . "</td>";
+    echo "<td>" . htmlentities($row['independence_year']) . "</td>";
+    echo "<td>" . htmlentities($row['head_of_state']) . "</td>";
+    echo "</tr>";
   }
-  echo "</ul>"; 
+  echo "</tbody>";
+  echo "</table>";
+   
 }
 
 
