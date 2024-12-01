@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("form").submit(function(event) {
         event.preventDefault();
-
     });
 
     $("#lookup").click(function(event) {
