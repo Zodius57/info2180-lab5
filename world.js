@@ -3,6 +3,7 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+    // Event that accepts a part of a country name to get its relevant information
     $("#lookup").click(function(event) {
         event.preventDefault();
 
@@ -17,7 +18,7 @@ $(document).ready(function(){
             alert("There seems to be an error.");
         });
     });
-
+    // Event that accepts a part of a country name to get its cities relevant information
     $("#cities").click(function(event) {
         event.preventDefault();
 

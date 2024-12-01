@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
   $country = isset($_GET['country']) ? $_GET['country'] : '';
   $lookup = isset($_GET['lookup']) ? $_GET['lookup'] : '';
 
+  // Returns html for a country's city list other wise it outputs the country list
   if($lookup == "cities"){
     $stmt = $conn->query("SELECT cities.name, cities.district, cities.population FROM cities JOIN countries ON cities.country_code = countries.code WHERE countries.name LIKE '%$country%'");
 
