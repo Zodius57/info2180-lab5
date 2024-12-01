@@ -1,1 +1,10 @@
-/* Add your own styles */
+header{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    color: #FFFFFF;
+}
+

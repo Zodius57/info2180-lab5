@@ -7,23 +7,31 @@
 		<!-- you can modify this as needed or to your preference -->
 		<link href="world.css" type="text/css" rel="stylesheet" />
 
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
 		<!-- you write this -->
 		<script src="world.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 		<header>
+			<img src="images/planet.jpg" id="logo">
 			<h1>World Database Lookup</h1>
 		</header>
 
 		<main>
 			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
+				<form action="" method="get">
+					<label for="country">Country:</label>
+					<div class="form-field">
+						<input id="country" type="search" name="country" placeholder="Enter country name" />
+						<button id="lookup">Lookup</button>
+					</div>
+				</form>
 			</div>
 			
 			<div id="result">
+				<ul></ul>
 				<!-- countries will appear here -->
 			</div>
 		</main>
